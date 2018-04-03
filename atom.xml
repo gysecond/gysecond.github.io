@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gysecond.github.io/"/>
-  <updated>2018-04-03T03:28:17.013Z</updated>
+  <updated>2018-04-03T06:30:03.947Z</updated>
   <id>https://gysecond.github.io/</id>
   
   <author>
@@ -17,62 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test1</title>
-    <link href="https://gysecond.github.io/2018/04/03/test1/"/>
-    <id>https://gysecond.github.io/2018/04/03/test1/</id>
-    <published>2018-04-03T03:22:14.000Z</published>
-    <updated>2018-04-03T03:28:17.013Z</updated>
+    <title>Oracle学习大纲</title>
+    <link href="https://gysecond.github.io/2018/04/03/Oracle%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2/"/>
+    <id>https://gysecond.github.io/2018/04/03/Oracle学习大纲/</id>
+    <published>2018-04-03T06:28:00.000Z</published>
+    <updated>2018-04-03T06:30:03.947Z</updated>
     
-    <content type="html"><![CDATA[<p>针对准备学习Oracle的朋友，给出如下学习大纲，系统性的学习理论基础知识和实战操作之后，应该能快速的应对工作。</p><h1 id="一-Linux"><a href="#一-Linux" class="headerlink" title="一. Linux"></a>一. Linux</h1><ol><li>Linux基础简介 </li><li>Linux命令简介 </li><li>shell脚本 </li><li>定时任务 </li><li>操作练习 </li></ol><h1 id="二-Oracle"><a href="#二-Oracle" class="headerlink" title="二. Oracle"></a>二. Oracle</h1><ol><li>基础简介</li><li>sqlplus、PL/SQL工具等</li><li>简单体系结构</li><li>数据库启动关闭</li><li>了解sql语句执行过程</li><li>查看执行计划的方法</li><li>数据类型以及操作符</li><li>使用常用数据类型 </li><li>rowid，rownum<a id="more"></a></li><li>null</li><li>数字函数</li><li>字符函数</li><li>时间函数</li><li>转换函数</li><li>多行函数</li><li>表/索引/视图/序列/触发器</li><li>DML</li><li>分区表</li><li>高级查询</li><li>深入体系结构</li><li>内存SGA/PGA等</li><li>后台进程</li><li>各种数据库文件</li><li>表空间/段区块</li><li>SQL优化</li><li>架构优化</li><li>逻辑备份expdp</li><li>rman</li><li>高可用DG</li><li>日常维护，实验</li></ol>]]></content>
+    <content type="html"><![CDATA[<pre><code>针对准备学习Oracle的朋友，给出如下学习大纲，系统性的学习理论基础知识和实战操作之后，应该能快速的应对工作。</code></pre><h1 id="一-Linux"><a href="#一-Linux" class="headerlink" title="一. Linux"></a>一. Linux</h1><ol><li>Linux基础简介</li><li>Linux命令简介</li><li>shell脚本</li><li>定时任务</li><li>操作练习</li></ol><a id="more"></a><h1 id="二-Oracle"><a href="#二-Oracle" class="headerlink" title="二. Oracle"></a>二. Oracle</h1><ol><li>基础简介</li><li>sqlplus、PL/SQL工具等</li><li>简单体系结构</li><li>数据库启动关闭</li><li>了解sql语句执行过程</li><li>查看执行计划的方法</li><li>数据类型以及操作符</li><li>使用常用数据类型 </li><li>rowid，rownum</li><li>null</li><li>数字函数</li><li>字符函数</li><li>时间函数</li><li>转换函数</li><li>多行函数</li><li>表/索引/视图/序列/触发器</li><li>DML</li><li>分区表</li><li>高级查询</li><li>深入体系结构</li><li>内存SGA/PGA等</li><li>后台进程</li><li>各种数据库文件</li><li>表空间/段区块</li><li>SQL优化</li><li>架构优化</li><li>逻辑备份expdp</li><li>rman</li><li>高可用DG</li><li>日常维护，实验</li></ol>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;针对准备学习Oracle的朋友，给出如下学习大纲，系统性的学习理论基础知识和实战操作之后，应该能快速的应对工作。&lt;/p&gt;
-&lt;h1 id=&quot;一-Linux&quot;&gt;&lt;a href=&quot;#一-Linux&quot; class=&quot;headerlink&quot; title=&quot;一. Linux&quot;&gt;&lt;/a&gt;一. Linux&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;Linux基础简介 &lt;/li&gt;
-&lt;li&gt;Linux命令简介 &lt;/li&gt;
-&lt;li&gt;shell脚本 &lt;/li&gt;
-&lt;li&gt;定时任务 &lt;/li&gt;
-&lt;li&gt;操作练习 &lt;/li&gt;
+      &lt;pre&gt;&lt;code&gt;针对准备学习Oracle的朋友，给出如下学习大纲，系统性的学习理论基础知识和实战操作之后，应该能快速的应对工作。
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;一-Linux&quot;&gt;&lt;a href=&quot;#一-Linux&quot; class=&quot;headerlink&quot; title=&quot;一. Linux&quot;&gt;&lt;/a&gt;一. Linux&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;Linux基础简介&lt;/li&gt;
+&lt;li&gt;Linux命令简介&lt;/li&gt;
+&lt;li&gt;shell脚本&lt;/li&gt;
+&lt;li&gt;定时任务&lt;/li&gt;
+&lt;li&gt;操作练习&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&quot;二-Oracle&quot;&gt;&lt;a href=&quot;#二-Oracle&quot; class=&quot;headerlink&quot; title=&quot;二. Oracle&quot;&gt;&lt;/a&gt;二. Oracle&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;基础简介&lt;/li&gt;
-&lt;li&gt;sqlplus、PL/SQL工具等&lt;/li&gt;
-&lt;li&gt;简单体系结构&lt;/li&gt;
-&lt;li&gt;数据库启动关闭&lt;/li&gt;
-&lt;li&gt;了解sql语句执行过程&lt;/li&gt;
-&lt;li&gt;查看执行计划的方法&lt;/li&gt;
-&lt;li&gt;数据类型以及操作符&lt;/li&gt;
-&lt;li&gt;使用常用数据类型 &lt;/li&gt;
-&lt;li&gt;rowid，rownum
     
     </summary>
     
-      <category term="目录2" scheme="https://gysecond.github.io/categories/%E7%9B%AE%E5%BD%952/"/>
+      <category term="学习大纲" scheme="https://gysecond.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2/"/>
     
     
-      <category term="标签1" scheme="https://gysecond.github.io/tags/%E6%A0%87%E7%AD%BE1/"/>
+      <category term="Linux" scheme="https://gysecond.github.io/tags/Linux/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://gysecond.github.io/2018/04/02/hello-world/"/>
-    <id>https://gysecond.github.io/2018/04/02/hello-world/</id>
-    <published>2018-04-02T15:31:28.728Z</published>
-    <updated>2018-04-02T15:31:28.728Z</updated>
+      <category term="Oracle" scheme="https://gysecond.github.io/tags/Oracle/"/>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
+      <category term="学习大纲" scheme="https://gysecond.github.io/tags/%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2/"/>
     
   </entry>
   
