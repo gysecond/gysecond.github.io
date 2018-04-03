@@ -261,6 +261,188 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gysecond.github.io/2018/04/04/Innodb-parameters/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Robin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/robin.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wakaka's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/04/Innodb-parameters/" itemprop="url">Innodb管理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-04T00:53:00+08:00">
+                2018-04-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">Mysql</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  192
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li>innodb_buffer_pool_size</li>
+<li>innodb_buffer_instances<br>分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE</li>
+<li>midpoint<br>第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表扫描的数据很容易挤掉正常的热数据，因此可以设置innodb_old_block_time</li>
+<li>FRU、LRU、Flush list<br>首先申请FRU空闲列表的页给LRU使用，当第一次修改后形成脏页，将此指针存放至flush list，flush list是根据information_schema.innodb_buffer_page_lru中的old_modification(最早修改的lsn)排序的，越小越早的排在flush list前面，对应更早的刷入磁盘。new_modification是当前的lsn</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+    
+
+    
+
+    
+	<!-- 本文结束标记 -->
+      <div>
+    
+      </div>
+      <!-- 本文结束标记END -->
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://gysecond.github.io/2018/04/03/Oracle学习大纲/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -486,7 +668,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -497,7 +679,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -508,7 +690,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -598,7 +780,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">257</span>
+    <span title="Site words total count">449</span>
   
 </div>
 -->
@@ -627,7 +809,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">257</span> 字
+      博客全站共： <span class="post-count">449</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->

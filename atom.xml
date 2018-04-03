@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gysecond.github.io/"/>
-  <updated>2018-04-03T06:30:03.947Z</updated>
+  <updated>2018-04-03T17:03:21.389Z</updated>
   <id>https://gysecond.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Innodb管理</title>
+    <link href="https://gysecond.github.io/2018/04/04/Innodb-parameters/"/>
+    <id>https://gysecond.github.io/2018/04/04/Innodb-parameters/</id>
+    <published>2018-04-03T16:53:00.000Z</published>
+    <updated>2018-04-03T17:03:21.389Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>innodb_buffer_pool_size</li><li>innodb_buffer_instances<br>分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE</li><li>midpoint<br>第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表扫描的数据很容易挤掉正常的热数据，因此可以设置innodb_old_block_time</li><li>FRU、LRU、Flush list<br>首先申请FRU空闲列表的页给LRU使用，当第一次修改后形成脏页，将此指针存放至flush list，flush list是根据information_schema.innodb_buffer_page_lru中的old_modification(最早修改的lsn)排序的，越小越早的排在flush list前面，对应更早的刷入磁盘。new_modification是当前的lsn</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;innodb_buffer_pool_size&lt;/li&gt;
+&lt;li&gt;innodb_buffer_instances&lt;br&gt;分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE&lt;/li&gt;
+&lt;li&gt;midpoint&lt;br&gt;第一次读
+      
+    
+    </summary>
+    
+      <category term="Mysql" scheme="https://gysecond.github.io/categories/Mysql/"/>
+    
+    
+      <category term="innodb" scheme="https://gysecond.github.io/tags/innodb/"/>
+    
+  </entry>
   
   <entry>
     <title>Oracle学习大纲</title>
