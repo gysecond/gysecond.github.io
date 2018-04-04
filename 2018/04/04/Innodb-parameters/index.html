@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="Wakaka&#39;s Blog">
 <meta property="og:description" content="innodb_buffer_pool_size innodb_buffer_instances分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE midpoint第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-03T17:03:21.389Z">
+<meta property="og:updated_time" content="2018-04-04T01:16:37.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Innodb管理">
 <meta name="twitter:description" content="innodb_buffer_pool_size innodb_buffer_instances分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE midpoint第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表">
@@ -384,7 +384,7 @@
         <ol>
 <li>innodb_buffer_pool_size</li>
 <li>innodb_buffer_instances<br>分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE</li>
-<li>midpoint<br>第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表扫描的数据很容易挤掉正常的热数据，因此可以设置innodb_old_block_time</li>
+<li>midpoint<br>第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表扫描的数据很容易挤掉正常的热数据，因此可以设置innodb_old_block_time<a id="more"></a></li>
 <li>FRU、LRU、Flush list<br>首先申请FRU空闲列表的页给LRU使用，当第一次修改后形成脏页，将此指针存放至flush list，flush list是根据information_schema.innodb_buffer_page_lru中的old_modification(最早修改的lsn)排序的，越小越早的排在flush list前面，对应更早的刷入磁盘。new_modification是当前的lsn</li>
 </ol>
 
@@ -406,7 +406,7 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wexin.png" alt="Robin WeChat Pay"/>
+        <img id="wechat_qr" src="/images/weixin.png" alt="Robin WeChat Pay"/>
         <p>WeChat Pay</p>
       </div>
     
@@ -483,28 +483,6 @@
 
 
     <div class="post-spread">
-      
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-<span class="jiathis_txt">分享到：</span>
-<a class="jiathis_button_fav">收藏夹</a>
-<a class="jiathis_button_copy">复制网址</a>
-<a class="jiathis_button_weixin">微信</a>
-
-<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-<a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-var jiathis_config={
-  data_track_clickback:true,
-  summary:"",
-  shortUrl:false,
-  hideMore:false
-}
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
       
     </div>
   </div>

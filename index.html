@@ -384,15 +384,17 @@
 
       
         
-          
-            <ol>
+          <ol>
 <li>innodb_buffer_pool_size</li>
 <li>innodb_buffer_instances<br>分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE</li>
-<li>midpoint<br>第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表扫描的数据很容易挤掉正常的热数据，因此可以设置innodb_old_block_time</li>
-<li>FRU、LRU、Flush list<br>首先申请FRU空闲列表的页给LRU使用，当第一次修改后形成脏页，将此指针存放至flush list，flush list是根据information_schema.innodb_buffer_page_lru中的old_modification(最早修改的lsn)排序的，越小越早的排在flush list前面，对应更早的刷入磁盘。new_modification是当前的lsn</li>
-</ol>
-
-          
+<li>midpoint<br>第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表扫描的数据很容易挤掉正常的热数据，因此可以设置innodb_old_block_time
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/04/Innodb-parameters/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
