@@ -80,7 +80,7 @@ print(&amp;quot;hello &amp;quot;,name)
     <link href="https://gysecond.github.io/2018/04/03/Oracle%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2/"/>
     <id>https://gysecond.github.io/2018/04/03/Oracle学习大纲/</id>
     <published>2018-04-03T06:28:00.000Z</published>
-    <updated>2018-04-03T06:30:03.947Z</updated>
+    <updated>2019-02-11T02:22:20.016Z</updated>
     
     <content type="html"><![CDATA[<pre><code>针对准备学习Oracle的朋友，给出如下学习大纲，系统性的学习理论基础知识和实战操作之后，应该能快速的应对工作。</code></pre><h1 id="一-Linux"><a href="#一-Linux" class="headerlink" title="一. Linux"></a>一. Linux</h1><ol><li>Linux基础简介</li><li>Linux命令简介</li><li>shell脚本</li><li>定时任务</li><li>操作练习</li></ol><a id="more"></a><h1 id="二-Oracle"><a href="#二-Oracle" class="headerlink" title="二. Oracle"></a>二. Oracle</h1><ol><li>基础简介</li><li>sqlplus、PL/SQL工具等</li><li>简单体系结构</li><li>数据库启动关闭</li><li>了解sql语句执行过程</li><li>查看执行计划的方法</li><li>数据类型以及操作符</li><li>使用常用数据类型 </li><li>rowid，rownum</li><li>null</li><li>数字函数</li><li>字符函数</li><li>时间函数</li><li>转换函数</li><li>多行函数</li><li>表/索引/视图/序列/触发器</li><li>DML</li><li>分区表</li><li>高级查询</li><li>深入体系结构</li><li>内存SGA/PGA等</li><li>后台进程</li><li>各种数据库文件</li><li>表空间/段区块</li><li>SQL优化</li><li>架构优化</li><li>逻辑备份expdp</li><li>rman</li><li>高可用DG</li><li>日常维护，实验</li></ol>]]></content>
     
