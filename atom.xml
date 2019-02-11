@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gysecond.github.io/"/>
-  <updated>2018-08-23T09:53:48.543Z</updated>
+  <updated>2019-02-11T02:26:22.025Z</updated>
   <id>https://gysecond.github.io/</id>
   
   <author>
@@ -17,70 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>python day1</title>
-    <link href="https://gysecond.github.io/2018/08/23/python/"/>
-    <id>https://gysecond.github.io/2018/08/23/python/</id>
-    <published>2018-08-23T06:48:00.000Z</published>
-    <updated>2018-08-23T09:53:48.543Z</updated>
-    
-    <content type="html"><![CDATA[<h6 id="1-Hello-World"><a href="#1-Hello-World" class="headerlink" title="1. Hello World"></a>1. Hello World</h6><pre><code>print(&quot;Hello World&quot;)</code></pre><h6 id="2-变量"><a href="#2-变量" class="headerlink" title="2. 变量"></a>2. 变量</h6><pre><code>name=&apos;wakaka&apos;    print(name)</code></pre><p>变量定义的规则：</p><ul><li>变量名只能是 字母、数字或下划线的任意组合</li><li>变量名的第一个字符不能是数字</li><li>以下关键字不能声明为变量名:<pre><code>(&apos;and&apos;, &apos;as&apos;, &apos;assert&apos;, &apos;break&apos;, &apos;class&apos;, &apos;continue&apos;, &apos;def&apos;, &apos;del&apos;, &apos;elif&apos;, &apos;else&apos;, &apos;except&apos;, &apos;exec&apos;, &apos;for&apos;, &apos;from&apos;, &apos;global&apos;, &apos;if&apos;, &apos;import&apos;, &apos;in&apos;, &apos;is&apos;, &apos;lambda&apos;, &apos;not&apos;, &apos;or&apos;, &apos;pass&apos;, &apos;print&apos;, &apos;raise&apos;, &apos;return&apos;, &apos;try&apos;, &apos;while&apos;, &apos;with&apos;, &apos;yield&apos;)</code></pre></li></ul><h6 id="3-用户输入"><a href="#3-用户输入" class="headerlink" title="3. 用户输入"></a>3. 用户输入</h6><pre><code>name=input(&quot;please input your name: &quot;)print(&quot;hello &quot;,name)</code></pre><a id="more"></a><h6 id="4-模块初识"><a href="#4-模块初识" class="headerlink" title="4. 模块初识"></a>4. 模块初识</h6><pre><code>import os,sysos.system(&quot;dir&quot;)</code></pre><h6 id="5-pyc是啥"><a href="#5-pyc是啥" class="headerlink" title="5. .pyc是啥"></a>5. .pyc是啥</h6><pre><code>用Java来举例，Java首先是通过编译器编译成字节码文件，然后在运行时通过解释器给解释成机器文件。所以我们说Java是一种先编译后解释的语言。PyCodeObject和pyc文件：当python程序运行时，编译的结果则是保存在位于内存中的PyCodeObject中，当Python程序运行结束时，Python解释器则将PyCodeObject写回到pyc文件中。当python程序第二次运行时，首先程序会在硬盘中寻找pyc文件，如果找到，则直接载入，否则就重复上面的过程。所以我们应该这样来定位PyCodeObject和pyc文件，我们说pyc文件其实是PyCodeObject的一种持久化保存方式。</code></pre><h6 id="6-数据类型"><a href="#6-数据类型" class="headerlink" title="6. 数据类型"></a>6. 数据类型</h6><ul><li>数字</li><li>布尔值</li><li>字符串<blockquote><ol><li>移除空白</li><li>分割</li><li>长度</li><li>索引</li><li>切片</li></ol></blockquote></li><li>列表<blockquote><ol><li>索引</li><li>切片</li><li>追加</li><li>删除</li><li>长度</li><li>循环</li><li>包含</li></ol></blockquote></li><li>元祖</li><li>字典<blockquote><ol><li>索引</li><li>新增</li><li>删除</li><li>键、值、键值对</li><li>循环</li><li>长度</li></ol></blockquote></li></ul><h6 id="7-数据运算"><a href="#7-数据运算" class="headerlink" title="7. 数据运算"></a>7. 数据运算</h6><ul><li>算数运算</li><li>逻辑运算</li></ul><h6 id="8-if…else"><a href="#8-if…else" class="headerlink" title="8. if…else"></a>8. if…else</h6><pre><code>name=&apos;wakaka&apos;pass=&apos;123&apos;input_name=input(&apos;please input username: &apos;)input_pass=input(&apos;please input pass: &apos;)if name == input_name and input_pass== pass:    print(&apos;welcome login in...&apos;)else:    print(&apos;wrong username or password&apos;)</code></pre><h6 id="9-for循环"><a href="#9-for循环" class="headerlink" title="9. for循环"></a>9. for循环</h6><pre><code>for i in range(0,10,2):    print(i)</code></pre><h6 id="10-break和continue"><a href="#10-break和continue" class="headerlink" title="10. break和continue"></a>10. break和continue</h6><p>continue</p><pre><code>for i in range(10):    if i&lt;5:        continue      print(i)</code></pre><p>break     </p><pre><code>for i in range(10):    if i&lt;5:        break   print(i)</code></pre><h6 id="11-while"><a href="#11-while" class="headerlink" title="11. while"></a>11. while</h6><pre><code>i=1while True:    print(&quot;hello&quot;,i)    i+=1</code></pre><h6 id="12-练习"><a href="#12-练习" class="headerlink" title="12. 练习"></a>12. 练习</h6><p>a. 编写登陆接口,输入用户名密码,认证成功后显示欢迎信息<br>输错三次后锁定</p><p>b.多级菜单,三级菜单,可依次选择进入各子菜单</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h6 id=&quot;1-Hello-World&quot;&gt;&lt;a href=&quot;#1-Hello-World&quot; class=&quot;headerlink&quot; title=&quot;1. Hello World&quot;&gt;&lt;/a&gt;1. Hello World&lt;/h6&gt;&lt;pre&gt;&lt;code&gt;print(&amp;quot;Hello World&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&quot;2-变量&quot;&gt;&lt;a href=&quot;#2-变量&quot; class=&quot;headerlink&quot; title=&quot;2. 变量&quot;&gt;&lt;/a&gt;2. 变量&lt;/h6&gt;&lt;pre&gt;&lt;code&gt;name=&amp;apos;wakaka&amp;apos;    
-print(name)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;变量定义的规则：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;变量名只能是 字母、数字或下划线的任意组合&lt;/li&gt;
-&lt;li&gt;变量名的第一个字符不能是数字&lt;/li&gt;
-&lt;li&gt;以下关键字不能声明为变量名:&lt;pre&gt;&lt;code&gt;(&amp;apos;and&amp;apos;, &amp;apos;as&amp;apos;, &amp;apos;assert&amp;apos;, &amp;apos;break&amp;apos;, &amp;apos;class&amp;apos;, &amp;apos;continue&amp;apos;, &amp;apos;def&amp;apos;, &amp;apos;del&amp;apos;, &amp;apos;elif&amp;apos;, &amp;apos;else&amp;apos;, &amp;apos;except&amp;apos;, &amp;apos;exec&amp;apos;, &amp;apos;for&amp;apos;, &amp;apos;from&amp;apos;, &amp;apos;global&amp;apos;, &amp;apos;if&amp;apos;, &amp;apos;import&amp;apos;, &amp;apos;in&amp;apos;, &amp;apos;is&amp;apos;, &amp;apos;lambda&amp;apos;, &amp;apos;not&amp;apos;, &amp;apos;or&amp;apos;, &amp;apos;pass&amp;apos;, &amp;apos;print&amp;apos;, &amp;apos;raise&amp;apos;, &amp;apos;return&amp;apos;, &amp;apos;try&amp;apos;, &amp;apos;while&amp;apos;, &amp;apos;with&amp;apos;, &amp;apos;yield&amp;apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h6 id=&quot;3-用户输入&quot;&gt;&lt;a href=&quot;#3-用户输入&quot; class=&quot;headerlink&quot; title=&quot;3. 用户输入&quot;&gt;&lt;/a&gt;3. 用户输入&lt;/h6&gt;&lt;pre&gt;&lt;code&gt;name=input(&amp;quot;please input your name: &amp;quot;)
-print(&amp;quot;hello &amp;quot;,name)
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://gysecond.github.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://gysecond.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Innodb管理</title>
-    <link href="https://gysecond.github.io/2018/04/04/Innodb-parameters/"/>
-    <id>https://gysecond.github.io/2018/04/04/Innodb-parameters/</id>
-    <published>2018-04-03T16:53:00.000Z</published>
-    <updated>2018-04-04T01:16:37.726Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li>innodb_buffer_pool_size</li><li>innodb_buffer_instances<br>分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE</li><li>midpoint<br>第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表扫描的数据很容易挤掉正常的热数据，因此可以设置innodb_old_block_time<a id="more"></a></li><li>FRU、LRU、Flush list<br>首先申请FRU空闲列表的页给LRU使用，当第一次修改后形成脏页，将此指针存放至flush list，flush list是根据information_schema.innodb_buffer_page_lru中的old_modification(最早修改的lsn)排序的，越小越早的排在flush list前面，对应更早的刷入磁盘。new_modification是当前的lsn</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;innodb_buffer_pool_size&lt;/li&gt;
-&lt;li&gt;innodb_buffer_instances&lt;br&gt;分散热数据，建议设置为CPU个数，单个大小为pool_size/个数，总数还是BPSIZE&lt;/li&gt;
-&lt;li&gt;midpoint&lt;br&gt;第一次读到的页放在midpoint位置，innodb_old_block_pct大约40%的位置，前面的是new，后面的是old，当第二次读到的时候放到new里面，这样容易导致BP污染，也就是全表扫描的数据很容易挤掉正常的热数据，因此可以设置innodb_old_block_time
-    
-    </summary>
-    
-      <category term="Mysql" scheme="https://gysecond.github.io/categories/Mysql/"/>
-    
-    
-      <category term="innodb" scheme="https://gysecond.github.io/tags/innodb/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Oracle学习大纲</title>
     <link href="https://gysecond.github.io/2018/04/03/Oracle%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2/"/>
     <id>https://gysecond.github.io/2018/04/03/Oracle学习大纲/</id>
     <published>2018-04-03T06:28:00.000Z</published>
-    <updated>2019-02-11T02:22:20.016Z</updated>
+    <updated>2019-02-11T02:26:22.025Z</updated>
     
     <content type="html"><![CDATA[<pre><code>针对准备学习Oracle的朋友，给出如下学习大纲，系统性的学习理论基础知识和实战操作之后，应该能快速的应对工作。</code></pre><h1 id="一-Linux"><a href="#一-Linux" class="headerlink" title="一. Linux"></a>一. Linux</h1><ol><li>Linux基础简介</li><li>Linux命令简介</li><li>shell脚本</li><li>定时任务</li><li>操作练习</li></ol><a id="more"></a><h1 id="二-Oracle"><a href="#二-Oracle" class="headerlink" title="二. Oracle"></a>二. Oracle</h1><ol><li>基础简介</li><li>sqlplus、PL/SQL工具等</li><li>简单体系结构</li><li>数据库启动关闭</li><li>了解sql语句执行过程</li><li>查看执行计划的方法</li><li>数据类型以及操作符</li><li>使用常用数据类型 </li><li>rowid，rownum</li><li>null</li><li>数字函数</li><li>字符函数</li><li>时间函数</li><li>转换函数</li><li>多行函数</li><li>表/索引/视图/序列/触发器</li><li>DML</li><li>分区表</li><li>高级查询</li><li>深入体系结构</li><li>内存SGA/PGA等</li><li>后台进程</li><li>各种数据库文件</li><li>表空间/段区块</li><li>SQL优化</li><li>架构优化</li><li>逻辑备份expdp</li><li>rman</li><li>高可用DG</li><li>日常维护，实验</li></ol>]]></content>
     
