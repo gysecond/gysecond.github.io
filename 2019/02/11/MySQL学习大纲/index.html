@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="介绍1针对文档中的名词、软件、原理、网络拓扑、用法等进行介绍。 目的1针对实验过程中想达到的目的进行梳理。 环境1列出实验的环境">
+<meta name="description" content="一、安装1. mysql5.62. mysql5.73. 升级二、用户与权限三、体系结构四、常用参数五、数据类型六、DDL、DML七、索引八、事务九、锁十、复制十一、高可用十二、备份恢复">
 <meta name="keywords" content="dba mysql oracle shell python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="文章模板">
-<meta property="og:url" content="https://gysecond.github.io/2019/02/11/文章模板/index.html">
+<meta property="og:title" content="MySQL学习大纲">
+<meta property="og:url" content="https://gysecond.github.io/2019/02/11/MySQL学习大纲/index.html">
 <meta property="og:site_name" content="Wakaka&#39;s Blog">
-<meta property="og:description" content="介绍1针对文档中的名词、软件、原理、网络拓扑、用法等进行介绍。 目的1针对实验过程中想达到的目的进行梳理。 环境1列出实验的环境">
+<meta property="og:description" content="一、安装1. mysql5.62. mysql5.73. 升级二、用户与权限三、体系结构四、常用参数五、数据类型六、DDL、DML七、索引八、事务九、锁十、复制十一、高可用十二、备份恢复">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-11T06:45:52.395Z">
+<meta property="og:updated_time" content="2019-02-11T10:01:27.248Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="文章模板">
-<meta name="twitter:description" content="介绍1针对文档中的名词、软件、原理、网络拓扑、用法等进行介绍。 目的1针对实验过程中想达到的目的进行梳理。 环境1列出实验的环境">
+<meta name="twitter:title" content="MySQL学习大纲">
+<meta name="twitter:description" content="一、安装1. mysql5.62. mysql5.73. 升级二、用户与权限三、体系结构四、常用参数五、数据类型六、DDL、DML七、索引八、事务九、锁十、复制十一、高可用十二、备份恢复">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://gysecond.github.io/2019/02/11/文章模板/"/>
+  <link rel="canonical" href="https://gysecond.github.io/2019/02/11/MySQL学习大纲/"/>
 
 
 
 
 
-  <title>文章模板 | Wakaka's Blog</title>
+  <title>MySQL学习大纲 | Wakaka's Blog</title>
   
 
 
@@ -261,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gysecond.github.io/2019/02/11/文章模板/">
+    <link itemprop="mainEntityOfPage" href="https://gysecond.github.io/2019/02/11/MySQL学习大纲/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Robin">
@@ -278,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">文章模板</h1>
+          <h1 class="post-title" itemprop="name headline">MySQL学习大纲</h1>
         
 
         <div class="post-meta">
@@ -290,7 +290,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-11T14:21:00+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-11T17:42:25+08:00">
                 2019-02-11
               </time>
             
@@ -322,7 +322,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  133
+                  58
                 </span>
               
 
@@ -359,42 +359,7 @@
       
 
       
-        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">针对文档中的名词、软件、原理、网络拓扑、用法等进行介绍。</span><br></pre></td></tr></table></figure>
-<h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">针对实验过程中想达到的目的进行梳理。</span><br></pre></td></tr></table></figure>
-<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">列出实验的环境</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">IP地址</th>
-<th style="text-align:left">配置</th>
-<th style="text-align:left">软件版本</th>
-<th style="text-align:left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">192.168.1.20</td>
-<td style="text-align:left">2c4g/centos7.4</td>
-<td style="text-align:left">mysql5.7</td>
-<td style="text-align:left">主</td>
-</tr>
-<tr>
-<td style="text-align:left">192.168.1.21</td>
-<td style="text-align:left">2c4g/centos7.4</td>
-<td style="text-align:left">mysql5.7</td>
-<td style="text-align:left">从</td>
-</tr>
-<tr>
-<td style="text-align:left">192.168.1.22</td>
-<td style="text-align:left">2c4g/centos7.4</td>
-<td style="text-align:left">mysql5.7</td>
-<td style="text-align:left">从</td>
-</tr>
-</tbody>
-</table>
-<h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><h2 id="1-步骤1"><a href="#1-步骤1" class="headerlink" title="1.步骤1"></a>1.步骤1</h2><p>安装mysql<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /software &amp;&amp; cd /software</span><br><span class="line">tar -zxf mysql-5.7.tar.gz</span><br></pre></td></tr></table></figure></p>
-<h2 id="2-步骤2"><a href="#2-步骤2" class="headerlink" title="2.步骤2"></a>2.步骤2</h2><h2 id="3-步骤3"><a href="#3-步骤3" class="headerlink" title="3.步骤3"></a>3.步骤3</h2><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="1-问题1"><a href="#1-问题1" class="headerlink" title="1.问题1"></a>1.问题1</h2><h2 id="2-问题2"><a href="#2-问题2" class="headerlink" title="2.问题2"></a>2.问题2</h2><h2 id="3-问题3"><a href="#3-问题3" class="headerlink" title="3.问题3"></a>3.问题3</h2>
+        <h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="1-mysql5-6"><a href="#1-mysql5-6" class="headerlink" title="1. mysql5.6"></a>1. mysql5.6</h2><h2 id="2-mysql5-7"><a href="#2-mysql5-7" class="headerlink" title="2. mysql5.7"></a>2. mysql5.7</h2><h2 id="3-升级"><a href="#3-升级" class="headerlink" title="3. 升级"></a>3. 升级</h2><h1 id="二、用户与权限"><a href="#二、用户与权限" class="headerlink" title="二、用户与权限"></a>二、用户与权限</h1><h1 id="三、体系结构"><a href="#三、体系结构" class="headerlink" title="三、体系结构"></a>三、体系结构</h1><h1 id="四、常用参数"><a href="#四、常用参数" class="headerlink" title="四、常用参数"></a>四、常用参数</h1><h1 id="五、数据类型"><a href="#五、数据类型" class="headerlink" title="五、数据类型"></a>五、数据类型</h1><h1 id="六、DDL、DML"><a href="#六、DDL、DML" class="headerlink" title="六、DDL、DML"></a>六、DDL、DML</h1><h1 id="七、索引"><a href="#七、索引" class="headerlink" title="七、索引"></a>七、索引</h1><h1 id="八、事务"><a href="#八、事务" class="headerlink" title="八、事务"></a>八、事务</h1><h1 id="九、锁"><a href="#九、锁" class="headerlink" title="九、锁"></a>九、锁</h1><h1 id="十、复制"><a href="#十、复制" class="headerlink" title="十、复制"></a>十、复制</h1><h1 id="十一、高可用"><a href="#十一、高可用" class="headerlink" title="十一、高可用"></a>十一、高可用</h1><h1 id="十二、备份恢复"><a href="#十二、备份恢复" class="headerlink" title="十二、备份恢复"></a>十二、备份恢复</h1>
       
     </div>
     
@@ -458,8 +423,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/04/MD语法/" rel="next" title="MD语法">
-                <i class="fa fa-chevron-left"></i> MD语法
+              <a href="/2019/02/11/Linux学习大纲/" rel="next" title="Linux学习大纲">
+                <i class="fa fa-chevron-left"></i> Linux学习大纲
               </a>
             
           </div>
@@ -467,10 +432,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/11/Linux学习大纲/" rel="prev" title="Linux学习大纲">
-                Linux学习大纲 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -650,7 +611,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目的"><span class="nav-number">2.</span> <span class="nav-text">目的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境"><span class="nav-number">3.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#过程"><span class="nav-number">4.</span> <span class="nav-text">过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-步骤1"><span class="nav-number">4.1.</span> <span class="nav-text">1.步骤1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-步骤2"><span class="nav-number">4.2.</span> <span class="nav-text">2.步骤2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-步骤3"><span class="nav-number">4.3.</span> <span class="nav-text">3.步骤3</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-问题1"><span class="nav-number">5.1.</span> <span class="nav-text">1.问题1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-问题2"><span class="nav-number">5.2.</span> <span class="nav-text">2.问题2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-问题3"><span class="nav-number">5.3.</span> <span class="nav-text">3.问题3</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、安装"><span class="nav-number">1.</span> <span class="nav-text">一、安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-mysql5-6"><span class="nav-number">1.1.</span> <span class="nav-text">1. mysql5.6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-mysql5-7"><span class="nav-number">1.2.</span> <span class="nav-text">2. mysql5.7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-升级"><span class="nav-number">1.3.</span> <span class="nav-text">3. 升级</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、用户与权限"><span class="nav-number">2.</span> <span class="nav-text">二、用户与权限</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、体系结构"><span class="nav-number">3.</span> <span class="nav-text">三、体系结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、常用参数"><span class="nav-number">4.</span> <span class="nav-text">四、常用参数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、数据类型"><span class="nav-number">5.</span> <span class="nav-text">五、数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、DDL、DML"><span class="nav-number">6.</span> <span class="nav-text">六、DDL、DML</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、索引"><span class="nav-number">7.</span> <span class="nav-text">七、索引</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、事务"><span class="nav-number">8.</span> <span class="nav-text">八、事务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#九、锁"><span class="nav-number">9.</span> <span class="nav-text">九、锁</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十、复制"><span class="nav-number">10.</span> <span class="nav-text">十、复制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十一、高可用"><span class="nav-number">11.</span> <span class="nav-text">十一、高可用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十二、备份恢复"><span class="nav-number">12.</span> <span class="nav-text">十二、备份恢复</span></a></li></ol></div>
             
 
           </div>
